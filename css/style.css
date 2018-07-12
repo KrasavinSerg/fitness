@@ -302,6 +302,11 @@ img {
   text-align: center;
 }
 
+.counter__clock {
+ display: flex;
+ justify-content: center;
+}
+
 .work-time__title {
   font-size: 22px;
   line-height: 26px;
@@ -380,7 +385,7 @@ img {
   content: "";
   width: 40px;
   right: -5px;
-  border: 2px solid #000000;
+  border: 1px solid #000000;
 }
 
 .close__btn::before {

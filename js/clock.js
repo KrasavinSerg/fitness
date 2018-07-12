@@ -1,4 +1,4 @@
-var clock = $('.clock').FlipClock({
+var clock = $('.counter__clock').FlipClock({
   // clockFace : 'DailyCounter',
   autoStart : false,
   language:'ru-ru',
