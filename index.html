@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>GYM</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/flipclock.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+</head>
+<body>
+  <header class="header">
+    <span class="header__logo">Лого</span>
+    <section class="contacts">
+      <h3 class="visually-hidden">Контакты</h3>
+      <ul class="contacts__list">
+        <li class="contscts__item">
+          <a class="contacts__link" href="https://www.instagram.com/fitstudio_msk/" target="_blank">
+            <img src="img/icon-inst.svg" alt="instagram" width="32" height="34">
+          </a>
+        </li>
+        <li class="contscts__item">
+          <a class="contacts__link" href="#https://vk.com/fitstudio777" target="_blank">
+            <img src="img/icon-vk.svg" alt="vkontakte" width="32" height="20">
+          </a>
+        </li>
+        <li class="contscts__item contscts__item--mail">
+          <a class="contacts__link" href="mailto:fitstudio.rabota@mail.ru">fitstudio.rabota@mail.ru</a>
+        </li>
+        <li id="address" class="contscts__item contscts__item--address">
+          <p>Москва, можайское шоссе 38к1</p>
+        </li>
+        <li class="contscts__item">
+          <span>+7 495 723-03-03</span>
+        </li>
+      </ul>
+    </section>
+  </header>
+  <main class="main">
+    <section class="offer-top">
+      <h1 class="offer-top__title">Неделя фитнеса +SPA</h1>
+      <p class="offer-top__text">Бесплатно</p>
+      <button id="top__btn" class="offer-top__btn">Записаться</button>
+      <img class="offer-top__img" src="img/girl.png" alt="girl" width="300" height="300">
+    </section>
+    <section class="gallery">
+      <h3 class="visually-hidden">Галерея</h3>
+      <ul class="gallery__list">
+        <li class="gallery__item gallery__item--overlay">
+          <a href="img/1.jpg" data-fancybox>
+            <img class="gallery__img gallery__img--1" src="img/1.jpg" alt="" width="380" height="300">
+          </a>
+        </li>
+        <li class="gallery__item gallery__item--overlay">
+          <a href="img/2.jpg" data-fancybox>
+            <img class="gallery__img gallery__img--2" src="img/2.jpg" alt="" width="385" height="300">
+          </a>
+        </li>
+        <li class="gallery__item gallery__item--video">
+          <a data-fancybox href="https://youtu.be/Ig7ISXn-L1g">
+            <img class="gallery__img" src="img/video.jpg" alt="video" width="600" height="300">
+          </a>  
+        </li>
+        <li class="gallery__item gallery__item--overlay">
+          <a href="img/3.jpg" data-fancybox>
+            <img class="gallery__img gallery__img--3" src="img/3.jpg" alt="" width="385" height="300">
+          </a>
+        </li>
+        <li class="gallery__item gallery__item--overlay">
+          <a href="img/4.jpg" data-fancybox>  
+            <img class="gallery__img gallery__img--4" src="img/4.jpg" alt="" width="385" height="300">
+          </a>  
+        </li>
+      </ul>
+    </section>
+    <section class="offer-bottom">
+      <h1 class="offer-bottom__title">13 месяцев<br> + SPA</h1>
+      <span class="offer-bottom__text--black">25000</span>
+      <span class="offer-bottom__text--red">13500</span>
+      <button class="offer-bottom__btn">Забронировать карту</button>
+      <section class="counter">
+        <p class="counter__text">до окончания акции осталось</p>
+        <div class="clock"></div>
+        <p class="message"></p>  
+      </section>
+      <section class="work-time">
+        <h3 class="visually-hidden">Режим работы</h3>
+        <div class="work-time__title">Режим работы</div>
+        <div class="work-time__text">Пн-Пт  7:00 до 24:00</div>
+        <div class="work-time__text">Сб, Вс  8:00 до 23:00</div>
+      </section>
+    </section>
+  </main>
+  <footer class="footer">
+    <span class="footer__logo">Лого</span>
+    <section class="contacts">
+      <h3 class="visually-hidden">Контакты</h3>
+      <ul class="contacts__list">
+        <li class="contscts__item">
+          <a class="contacts__link" href="https://www.instagram.com/fitstudio_msk/" target="_blank">
+            <img src="img/icon-inst.svg" alt="instagram" width="32" height="34">
+          </a>
+        </li>
+        <li class="contscts__item">
+          <a class="contacts__link" href="#https://vk.com/fitstudio777" target="_blank">
+            <img src="img/icon-vk.svg" alt="vkontakte" width="32" height="20">
+          </a>
+        </li>
+        <li class="contscts__item contscts__item--mail">
+          <a class="contacts__link" href="mailto:fitstudio.rabota@mail.ru">fitstudio.rabota@mail.ru</a>
+        </li>
+        <li class="contscts__item contscts__item--address">
+          <p>Москва, можайское шоссе 38к1</p>
+        </li>
+        <li class="contscts__item">
+          <span>+7 495 723-03-03</span>
+        </li>
+      </ul>
+    </section>
+  </footer>
+
+  <article id="modal1" class="modal1">
+    <div class="modal1__container">
+      <button id="close1" class="close__btn">Закрыть</button>
+      <h1>Неделя фитнеса</h1>
+      <span>в подарок</span>
+      <form class="modal1__form" method="GET" action="#">
+        <input type="text" name="name" placeholder="Имя *" required>
+        <input type="tel" name="tel" placeholder="+7" required>
+        <input type="submit" value="Записаться">
+      </form>
+    </div>
+  </article>
+
+  <article id="modal2" class="modal2">
+    <div class="modal2__container">
+      <button id="close2" class="close__btn">Закрыть</button>
+      <div class="modal2__wrap">
+        <address class="modal2__address">Москва,<br> Можайское<br> шоссе 38к1</address>
+        <p class="modal2__text1">Проложить маршрут</p>
+        <a class="modal2__link" href="https://yandex.ru/maps/-/CBubAOB7-B
+        " target="_blank">Яндекс</a>
+        <a class="modal2__link" href="https://goo.gl/maps/DCioQnHYR6F2" target="_blank">Google</a>
+        <div class="wrap">
+        <p class="modal2__text2">Много интересного<br> найдете в наших соцсетях</p>
+        <ul class="modal2__list">
+          <li class="modal2__item">
+            <a class="modal2__link-social" href="https://www.instagram.com/fitstudio_msk/" target="_blank">
+              <img src="img/icon-inst-grey.svg" alt="instagram" width="16" height="16">
+            </a>
+          </li>
+          <li class="contscts__item">
+            <a class="modal2__link-social" href="#https://vk.com/fitstudio777" target="_blank">
+              <img src="img/icon-vk-grey.svg" alt="vkontakte" width="16" height="9">
+            </a>
+          </li>
+        </ul>
+        </div>
+      </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2247.2887477833133!2d37.411751215836404!3d55.71873398054424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54ef39fc8146b%3A0x9b0fd755f5dd577c!2sMozhayskoye+Shosse%2C+38%2C+Moskva%2C+121354!5e0!3m2!1sen!2sru!4v1531303884650" width="380" height="360" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </article>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/flipclock.min.js"></script>
+<script src="js/clock.js"></script>
+</script>
+</body>
+</html>
