@@ -1,8 +1,36 @@
+@font-face { 
+  font-family: 'agfutura'; 
+  src:  url('../fonts/agfutura_regular.ttf') format('truetype');
+  font-weight: normal; 
+  font-style: normal; 
+}
+
+@font-face { 
+  font-family: 'agfutura'; 
+  src:  url('../fonts/agfutura_bold.ttf') format('truetype');
+  font-weight: bold; 
+  font-style: normal; 
+}
+
+@font-face { 
+  font-family: 'Stem'; 
+  src:  url('../fonts/Stem-Light.otf') format('OpenType');
+  font-weight: lighter; 
+  font-style: normal; 
+}
+
+@font-face { 
+  font-family: 'Stem'; 
+  src:  url('../fonts/Stem-Bold.otf') format('OpenType');
+  font-weight: bold; 
+  font-style: normal; 
+}
+
 body {
   position: relative;
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'agfutura', sans-serif;
   font-weight: normal;
   background-color: lightgrey;
   /* width: 1920px; */
@@ -337,6 +365,7 @@ img {
 }
  
 .modal1 {
+  font-family: 'Stem', sans-serif;
   display: none;
   position: fixed;
   top: 0;
@@ -423,6 +452,7 @@ img {
 
 .modal1__form input[type="text"],
 .modal1__form input[type="tel"] {
+  font-family: 'Stem', sans-serif;
   border-style: none;
   padding-bottom: 5px;
   font-size: 24px;
@@ -460,6 +490,7 @@ img {
 }
 
 .modal2 {
+  font-family: 'Stem', sans-serif;
   display: none;
   position: fixed;
   top: 0;
