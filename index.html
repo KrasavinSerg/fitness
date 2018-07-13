@@ -11,6 +11,7 @@
 </head>
 <body>
   <header class="header">
+    <div class="header__container">
     <span class="header__logo">Лого</span>
     <section class="contacts">
       <h3 class="visually-hidden">Контакты</h3>
@@ -36,39 +37,50 @@
         </li>
       </ul>
     </section>
+    </div>
   </header>
   <main class="main">
     <section class="offer-top">
-      <h1 class="offer-top__title">Неделя фитнеса +SPA</h1>
-      <p class="offer-top__text">Бесплатно</p>
-      <button id="top__btn" class="offer-top__btn">Записаться</button>
-      <img class="offer-top__img" src="img/girl.png" alt="girl" width="300" height="300">
+      <div class="offer-top__wrap-left">
+        <div class="offer-top__wrap-title first">
+          <h1 class="offer-top__title">Неделя фитнеса +SPA</h1>
+          <p class="offer-top__text">Бесплатно</p>
+        </div>
+        <button id="top__btn" class="offer-top__btn">Записаться</button>
+      </div>
+      <div class="offer-top__wrap-right secondd">
+        <img class="offer-top__img" src="img/girl.png" alt="girl" width="300" height="300">
+      </div>
     </section>
     <section class="gallery">
       <h3 class="visually-hidden">Галерея</h3>
       <ul class="gallery__list">
-        <li class="gallery__item gallery__item--overlay">
+        <li class="gallery__item gallery__item--icon">
           <a href="img/1.jpg" data-fancybox>
+            <div class="gallery__item--overlay"></div>
             <img class="gallery__img gallery__img--1" src="img/1.jpg" alt="" width="380" height="300">
           </a>
         </li>
-        <li class="gallery__item gallery__item--overlay">
+        <li class="gallery__item gallery__item--icon">
           <a href="img/2.jpg" data-fancybox>
+            <div class="gallery__item--overlay"></div>
             <img class="gallery__img gallery__img--2" src="img/2.jpg" alt="" width="385" height="300">
           </a>
         </li>
-        <li class="gallery__item gallery__item--video">
+        <li id="video" class="gallery__item gallery__item--video">
           <a data-fancybox href="https://youtu.be/Ig7ISXn-L1g">
             <img class="gallery__img" src="img/video.jpg" alt="video" width="600" height="300">
           </a>  
         </li>
-        <li class="gallery__item gallery__item--overlay">
+        <li class="gallery__item gallery__item--icon">
           <a href="img/3.jpg" data-fancybox>
+            <div class="gallery__item--overlay"></div>
             <img class="gallery__img gallery__img--3" src="img/3.jpg" alt="" width="385" height="300">
           </a>
         </li>
-        <li class="gallery__item gallery__item--overlay">
+        <li class="gallery__item gallery__item--icon">
           <a href="img/4.jpg" data-fancybox>  
+            <div class="gallery__item--overlay"></div>
             <img class="gallery__img gallery__img--4" src="img/4.jpg" alt="" width="385" height="300">
           </a>  
         </li>
@@ -80,6 +92,7 @@
       <span class="offer-bottom__text--red">13500</span>
       <button class="offer-bottom__btn">Забронировать карту</button>
       <section class="counter">
+        <h6 class="visually-hidden">Таймер</h6>
         <p class="counter__text">до окончания акции осталось</p>
         <div class="counter__clock"></div>
       </section>
@@ -133,6 +146,7 @@
   </article>
 
   <article id="modal2" class="modal2">
+    <h6 class="visually-hidden">Адрес</h6>
     <div class="modal2__container">
       <button id="close2" class="close__btn">Закрыть</button>
       <div class="modal2__wrap">
@@ -161,11 +175,22 @@
     </div>
   </article>
 
+  <article id="modal3" class="modal3">
+    <h6 class="visually-hidden">Видео</h6>
+    <div class="modal3__container">
+      <div class="modal3__sidebar">
+        <button id="close3" class="modal3__close-btn"></button>
+      </div>
+      <video class="modal3__video" controls width="100%" height="100%"></video>
+    </div>
+  </article>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/flipclock.min.js"></script>
 <script src="js/clock.js"></script>
-</script>
+<script src="js/parallax.js"></script>
+<script src="js/header.js"></script>
 </body>
 </html>
