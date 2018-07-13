@@ -141,18 +141,18 @@ img {
   width: 735px;
   position: relative;
   z-index: 10;
-  outline: 1px solid blue;
+  /* outline: 1px solid blue; */
 }
 
 .offer-top__wrap-title {
-  /* position: absolute; */
-  outline: 1px solid;
+  position: absolute;
+  /* outline: 1px solid; */
 }
 
 .offer-top__wrap-right {
   position: relative;
   width: 735px;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .offer-top__img {
@@ -197,7 +197,7 @@ img {
 .offer-top__btn {
   width: 327px;
   height: 90px;
-  /* margin-top: 376px; */
+  margin-top: 376px;
   margin-left: 30px;
   border-style: none;
   border-radius: 50px;
