@@ -9,7 +9,7 @@ var clock = $('.counter__clock').FlipClock({
   }
 });
 
-var dt = ('2018/07/14 23:00:00'); //Дата до которой нужен таймер
+var dt = ('2018/07/19 23:00:00'); //Дата до которой нужен таймер
 var first = new Date(dt);
 var last = Date.now();
 var remaining = first - last;
