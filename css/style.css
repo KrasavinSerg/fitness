@@ -220,7 +220,7 @@ img {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  background-color: #f6f6f6;
+  background: radial-gradient(circle farthest-corner at 30% 50%, #FEFFFF, #a0a0a0);
   padding-top: 290px;
   padding-left: 150px;
   padding-right: 150px;
