@@ -160,6 +160,21 @@ img {
   color: #000000;
 }
 
+@media (max-width: 1370px) {
+  .contscts__list--address {
+    width: 340px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1280px) {
+  .contscts__list--social {
+    width: 95px;
+  }
+}
+
 @media (max-width: 1024px) {
    .contacts {
     width: 100%;
