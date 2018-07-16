@@ -133,7 +133,7 @@ img {
   list-style: none;
 }
 
-.contscts__list--social {
+.contacts__list--social {
   width: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -146,12 +146,12 @@ img {
           align-items: center;
 }
 
-.contscts__list--social img {
+.contacts__list--social img {
   width: 100%;
   height: auto;
 }
 
-.contscts__list--address {
+.contacts__list--address {
   width: 610px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -161,28 +161,29 @@ img {
           justify-content: space-between;
 }
 
-.contscts__item a {
+.contacts__item a {
   text-decoration: none;
+  color: #2C00DA;
 }
 
-.contscts__item p {
+.contacts__item p {
   margin: 0;
   cursor: pointer;
+  color: #2C00DA;
 }
 
-.contscts__item--mail,
-.contscts__item--address {
+.contacts__item--mail,
+.contacts__item--address {
   font-size: 22px;
   line-height: 36px;
-  color: #2C00DA;
   border-bottom: 1px solid #2C00DA;
 }
 
-.contscts__item--mail-small {
+.contacts__item--mail-small {
   display: none;
 }
 
-.contscts__item--tel span {
+.contacts__item--tel span {
   font-size: 30px;
   line-height: 35px;
   font-weight: 700;
@@ -190,7 +191,7 @@ img {
 }
 
 @media (max-width: 1370px) {
-  .contscts__list--address {
+  .contacts__list--address {
     width: 340px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -206,7 +207,7 @@ img {
 }
 
 @media (max-width: 1280px) {
-  .contscts__list--social {
+  .contacts__list--social {
     width: 95px;
   }
 }
@@ -216,7 +217,7 @@ img {
     width: 100%;
   }
 
-  .contscts__list--social {
+  .contacts__list--social {
     width: 100px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -233,7 +234,7 @@ img {
             align-items: center;
   }
 
-  .contscts__list--address {
+  .contacts__list--address {
     width: 310px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -247,14 +248,14 @@ img {
             flex-direction: column;
   }
 
-  .contscts__item--mail,
-  .contscts__item--address {
+  .contacts__item--mail,
+  .contacts__item--address {
     font-size: 20px;
     line-height: 30px;
     border-bottom: none;
   }
 
-  .contscts__item span {
+  .contacts__item span {
     font-size: 25px;
     line-height: 35px;
   }
@@ -274,7 +275,7 @@ img {
             align-items: center;
   }
 
-  .contscts__list--social {
+  .contacts__list--social {
     width: 200px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -291,7 +292,7 @@ img {
     margin-bottom: 15px;
   }
 
-  .contscts__list--address {
+  .contacts__list--address {
     width: 310px;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -301,6 +302,7 @@ img {
 }
 
 .offer-top {
+  position: relative;
   max-width: 1620px;
   min-height: 681px;
   margin: 0 auto;
