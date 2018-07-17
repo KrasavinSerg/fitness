@@ -6,6 +6,7 @@ var close1 = document.querySelector('#close1');
 var close2 = document.querySelector('#close2');
 // var close3 = document.querySelector('#close3');
 var address = document.querySelector('#address');
+var address_bottom = document.querySelector('#address_bottom');
 // var video = document.querySelector('#video');
 
 
@@ -28,6 +29,24 @@ window.addEventListener('keydown', function (evt) {
 });
 
 address.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  modal2.classList.add('modal-show');
+});
+
+close2.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  modal2.classList.remove('modal-show');
+});
+
+window.addEventListener('keydown', function (evt) {
+  if (evt.keyCode === 27) {
+    if (modal2.classList.contains('modal-show')) {
+    modal2.classList.remove('modal-show');
+    }
+  }
+});
+
+address_bottom.addEventListener('click', function (evt) {
   evt.preventDefault();
   modal2.classList.add('modal-show');
 });
