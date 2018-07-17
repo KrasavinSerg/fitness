@@ -18,14 +18,16 @@
 
 @font-face { 
   font-family: 'Stem'; 
-  src:  url('../fonts/Stem-Light.otf') format('OpenType');
+  src:  url('../fonts/Stem-Light.otf') format('OpenType'),
+        url('../fonts/Stem-Light.woff') format('woff');
   font-weight: normal; 
   font-style: normal; 
 }
 
 @font-face { 
   font-family: 'Stem'; 
-  src:  url('../fonts/Stem-Bold.otf') format('OpenType');
+  src:  url('../fonts/Stem-Bold.otf') format('OpenType'),
+        url('../fonts/Stem-Bold.woff') format('woff');
   font-weight: bold; 
   font-style: normal; 
 }
